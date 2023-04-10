@@ -46,13 +46,11 @@ table {
 	border-spacing: 0;
 }
 /*My own css start here*/
-
 body {
     background-color: black;
     font-family: 'Poppins', sans-serif;
     margin: 0px;
 }
-
 /*styly headeru - začátek*/
 header {
     background-color: white;
@@ -62,22 +60,18 @@ header {
     align-items: center;
     justify-content: space-evenly;
 }
-
 header a {
     color: black;
     text-decoration: none;
     font-size: 22px;
 }
-
 header a:hover {
     color: #636363;
 }
-
 header a:active {
     color: #959595;
 }
 /*styly headeru - konec*/
-
 /*styly náhledu - začátek*/
 .mainPart {
     height: 100vh;
@@ -88,8 +82,7 @@ header a:active {
     xmargin-bottom: 0px;
     padding: 0px;
 }
-
-.mainPartWrapper {
+.paralaxWrapper {
     position: relative;
     display: flex;
     justify-content: center;
@@ -99,20 +92,17 @@ header a:active {
     transform-style: preserve-3d;
     z-index: -1;
 }
-
 h1 {
     font-size: 85px;
     letter-spacing: 7px;
     font-weight: 200;
 }
-
-.mainPart p {
+.welcome {
     font-size: 34px;
     letter-spacing: 2px;
     margin-top: 130px;
 }
-
-.mainPart img {
+.paralaxPhoto {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -121,10 +111,65 @@ h1 {
     z-index: -1;
     transform: translateZ(-10px) scale(2);
 }
-
-.div {
+/*styly náhledu - konec*/
+/*styly infoBoxu - začátek*/
+.infoBox {
     height: 300px;
+    font-size: 35px;
     background-color: white;
-    border-bottom: 5px solid black;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.infoText {
+    text-align: center;
+    letter-spacing: 0.4px;
+    line-height: 50px;
+    font-weight: 100;
+}
+/*styly infoBoxu - konec*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*styly footer - začátek*/
+footer {
+    width: 100vw;
+    height: 80px;
+    color: black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px;
+}
+.footerContainer {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerContactName {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.footerContactKey {
+    font-size: 20px;
+}
+.footerCopyright {
+    margin-top: 10px;
+}
+/*styly footer - konec*/
