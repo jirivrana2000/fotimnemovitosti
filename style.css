@@ -49,17 +49,21 @@ table {
 body {
     background-color: black;
     font-family: 'Poppins', sans-serif;
-    margin: 0px;
     box-sizing: border-box;
 }
 /*styly headeru - začátek*/
 header {
     background-color: white;
     width: 100vw;
-    height: 86px;
+    height: 65px;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: -65px;
+    opacity: 1;
+    z-index: 3;
+    box-shadow: 0px -5px 10px -5px black inset;
 }
 header a {
     color: black;
@@ -74,13 +78,13 @@ header a:active {
 }
 /*styly headeru - konec*/
 /*styly náhledu - začátek*/
-.mainPart {
+.main {
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
     color: white;
-    xmargin-bottom: 0px;
+    margin-top: 65px;
     padding: 0px;
 }
 .paralaxWrapper {
@@ -122,6 +126,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
 }
 .infoText {
     text-align: center;
@@ -138,7 +144,6 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 3px 0px;
 }
 .swiper {
     width: 80%;
@@ -168,7 +173,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 0px;
+    box-shadow: 0px 10px 10px -10px black inset;
 }
 .footerContainer {
     width: 300px;
@@ -185,6 +190,6 @@ footer {
     font-size: 20px;
 }
 .footerCopyright {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 /*styly footer - konec*/
