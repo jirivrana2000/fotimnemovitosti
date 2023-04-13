@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='style.css'/>
-    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+    <link rel='stylesheet' href='style.css'/>
+    <script src="script.js" defer></script>
     <title>Domů  | Fotím nemovitosti</title>
 </head>
 <body>
@@ -32,6 +34,20 @@
                 fotky vašeho podniku nebo videoprohlídka?<br>
                 Tohle všechno a v té nejvyšší kvalitě.
             </p>
+        </div>
+        <div class="galleryContainer">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/hlavni 1.jpg" alt="Obývací pokoj"></div>
+                  <div class="swiper-slide"><img src="img/hlavni 2.jpg" alt="Terasa s výhledem"></div>
+                  <div class="swiper-slide"><img src="img/hlavni 3.jpg" alt="koupelna"></div>
+                  <div class="swiper-slide"><img src="img/hlavni 4.jpg" alt="dům z přední strany"></div>
+                  <div class="swiper-slide"><img src="img/hlavni 5.jpg" alt="dům ze zadní strany"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
         </div>
     </div>
     <footer>

@@ -50,6 +50,7 @@ body {
     background-color: black;
     font-family: 'Poppins', sans-serif;
     margin: 0px;
+    box-sizing: border-box;
 }
 /*styly headeru - začátek*/
 header {
@@ -129,21 +130,35 @@ h1 {
     font-weight: 100;
 }
 /*styly infoBoxu - konec*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*styl galerie - začátek*/
+.galleryContainer {
+    width: 100%;
+    height: fit-content;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3px 0px;
+}
+.swiper {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+.swiper-slide img {
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+}
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+    color: lightgray;
+}
+.swiper .swiper-pagination-bullet-active {
+    background-color: lightgray;
+}
+/*styl galerie - konec*/
 /*styly footer - začátek*/
 footer {
     width: 100vw;
