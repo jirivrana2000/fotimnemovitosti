@@ -4,23 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='style.css'/>
-    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+    <link rel='stylesheet' href='side.css'/>
+    <script src="script.js" defer></script>
     <title>Fotky | Fotím nemovitosti</title>
 </head>
 <body>
     <header>
         <a href="index.html">Domů</a>
-        <a href="fotky.html">Fotky</a>
+        <a class="headerActive" href="fotky.html">Fotky</a>
         <a href="dron.html">Dron</a>
         <a href="pudorys.html">Půdorys</a>
         <a href="video.html">Video</a>
         <a href="cenik.html">Ceník</a>
         <a href="kontakt.html">Kontakt</a>
     </header>
+    
+    <img class="img" src="img/hlavni paralax.jpg" alt="">
+
+    <div class="main">
+        <div class="infoBox">
+            <h1>Fotografie</h1>
+            <p>Fotografie jsou první kontakt nemovitosti se zájemcem a tak je právě na nich aby udělaly co nejlepší první dojem. Správně nafocená nemovitost je dobrým základem pro úspěšný prodej.</p>
+        </div>
+        <div class="galleryContainer">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/hlavni pudorys 1.jpg" alt="půdorys nadstandartního bytu"></div>
+                  <div class="swiper-slide"><img src="img/hlavni pudorys 2.jpg" alt="půdorys domu z modulů včetně loga firmy"></div>
+                  <div class="swiper-slide"><img src="img/hlavni pudorys 3.jpg" alt="půdorys domu"></div>
+                  <div class="swiper-slide"><img src="img/hlavni pudorys 4.jpg" alt="půdorys domu z modulů"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+        </div>
+    </div>
+    
+    <div class="seeThruContainer">
+        <h2>Fotky které prodávají.</h2>
+    </div>
+
+    <div class="priceContainer">
+        <h3>Ceník</h3>
+        <div class="priceWrapper">
+            <div class="priceName">
+                <p>Dvoupokojový a menší</p>
+                <p>Tří a Čtyřpokojový</p>
+                <p>Větší</p>
+                <p>Expresní zpracování do druhého dne</p>
+            </div>
+            <div class="priceNumber">
+                <p>1600 kč</p>
+                <p>2000 kč</p>
+                <p>na domluvě</p>
+                <p>500 kč</p>
+            </div>
+        </div>
+        <h3>Kompletní balíček</h3>
+        <p class="priceWrapper">Fotografie interiéru, fotky dronem a půdorys. Výhodný balíček zahrnuje vše, co by při profesionální prezentaci nemovitostí nemělo chybět.</p>
+        <div class="priceWrapper">
+            <div class="priceName">
+                <p>Dvoupokojový a menší</p>
+                <p>Tří a Čtyřpokojový</p>
+                <p>Větší</p>
+                <p>Expresní zpracování do druhého dne</p>
+            </div>
+            <div class="priceNumber">
+                <p>2500 kč</p>
+                <p>3000 kč</p>
+                <p>na domluvě</p>
+                <p>500 kč</p>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="footerContainer">
