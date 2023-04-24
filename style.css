@@ -42,7 +42,7 @@ h1 {
 }
 /*infobox*/
 .infoBox {
-    height: 300px;
+    height: clamp(300px, fit-content, 350px);
     font-size: 35px;
     background-color: white;
     color: black;
@@ -57,6 +57,7 @@ h1 {
     letter-spacing: 0.4px;
     line-height: 50px;
     font-weight: 100;
+    padding: 50px 0px;
 }
 /*galerie*/
 .galleryContainer {
@@ -85,3 +86,41 @@ h1 {
 .swiper .swiper-pagination-bullet-active {
     background-color: lightgray;
 }
+/*pro malé obrazovky*/
+@media (max-width: 1167px) {
+    h1 {
+        font-size: 8vw;
+    }
+  }
+@media (max-width: 600px) {
+    .main {
+        margin-top: 0px;
+    }
+    h1 {
+        font-size: 7vw;
+    }
+    .swiper {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+    }
+    .swiper-slide img {
+        width: 100%;
+        display: block;
+        margin: 0px auto;
+    }
+    .infoBox {
+        border: none;
+    }
+    .swiper .swiper-button-prev,
+    .swiper .swiper-button-next, 
+    .swiper .swiper-pagination {
+        display: none;
+    }
+  }
+  @media (max-width: 300px) {
+    h1 {
+        font-size: 5vw;
+    }
+  }

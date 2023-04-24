@@ -106,3 +106,21 @@ footer {
 .footerCopyright {
     margin-top: 5px;
 }
+/*pro malé obrazovky*/
+@media (max-width: 600px) {
+    header a {
+        display: none;
+    }
+  }
+@media (max-width: 900px) {
+    footer {
+        height: fit-content;
+        flex-direction: column;
+    }
+    footer p {
+        margin: 15px 0px;
+    }
+    .footerCopyright {
+        display: none;
+    }
+  }
