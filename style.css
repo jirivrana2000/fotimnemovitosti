@@ -1,5 +1,5 @@
 header {
-    margin-top: -65px;
+    xmargin-top: -65px;
 }
 /*paralax*/
 .main {
@@ -8,7 +8,7 @@ header {
     overflow-x: hidden;
     perspective: 10px;
     color: white;
-    margin-top: 65px;
+    margin-top: 0px;
     padding: 0px;
 }
 .paralaxWrapper {
@@ -94,7 +94,7 @@ h1 {
   }
 @media (max-width: 600px) {
     .main {
-        margin-top: 0px;
+        margin-top: -65px;
     }
     h1 {
         font-size: 7vw;
