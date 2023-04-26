@@ -1,6 +1,3 @@
-header {
-    xmargin-top: -65px;
-}
 /*paralax*/
 .main {
     height: 100vh;
@@ -91,7 +88,7 @@ h1 {
     h1 {
         font-size: 8vw;
     }
-  }
+}
 @media (max-width: 600px) {
     .main {
         margin-top: -65px;
@@ -118,9 +115,9 @@ h1 {
     .swiper .swiper-pagination {
         display: none;
     }
-  }
-  @media (max-width: 300px) {
+}
+@media (max-width: 300px) {
     h1 {
         font-size: 5vw;
     }
-  }
+}
