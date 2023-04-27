@@ -2,7 +2,7 @@
 .main {
     height: 100vh;
     overflow-y: auto;
-    overflow-x: hidden;
+    xoverflow-x: hidden;
     perspective: 10px;
     color: white;
     margin-top: 0px;

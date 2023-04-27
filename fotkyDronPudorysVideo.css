@@ -1,6 +1,6 @@
 /*obrázek na pozadí*/
 .img {
-    position: absolute;
+    position: fixed;
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
@@ -157,7 +157,7 @@ p.priceWrapper {
         flex-direction: column;
         line-height: 40px;
         letter-spacing: 1.3;
-        font-weight: 100;
+        font-weight: 200;
     }
     h3 {
         font-size: 38px;
@@ -166,10 +166,10 @@ p.priceWrapper {
     .priceWrapper {
         display: flex;
         justify-content: space-around;
-        width: 80%;
+        width: 90%;
     }
     .priceContainer p {
-        font-size: 18px;
+        font-size: 22px;
     }
     .priceNumber {
         display: flex;
@@ -198,7 +198,7 @@ p.priceWrapper {
         height: 50vh;
     }
 }
-@media (max-width: 440px) {
+@media (max-width: 482px) {
     .swiper .swiper-button-prev,
     .swiper .swiper-button-next, 
     .swiper .swiper-pagination {
@@ -211,7 +211,7 @@ p.priceWrapper {
         flex-direction: column;
         line-height: 40px;
         letter-spacing: 1;
-        font-weight: 100;
+        font-weight: 200;
     }
     h3 {
         font-size: 30px;
@@ -220,15 +220,20 @@ p.priceWrapper {
     .priceWrapper {
         display: flex;
         justify-content: space-around;
-        width: 80%;
+        width: 90%;
     }
     .priceContainer p {
-        font-size: 14px;
+        font-size: 17px;
     }
     .priceNumber {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         margin-bottom: 40px;
+    }
+}
+@media (max-width: 385px) {
+    .priceContainer p {
+        font-size: 14px;
     }
 }

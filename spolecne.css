@@ -49,6 +49,7 @@ table {
 body {
     background-color: black;
     font-family: 'Poppins', sans-serif;
+	min-width: 300px;
 }
 * {
     box-sizing: border-box;
@@ -94,6 +95,7 @@ header a:hover {
 }
 /*footer */
 footer {
+	min-width: 300px;
     width: 100vw;
     height: 80px;
     color: black;
@@ -105,7 +107,7 @@ footer {
     border-top: 5px solid black;
 }
 .footerContainer {
-    width: 300px;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
