@@ -20,6 +20,7 @@ body {
     align-items: center;
     margin-bottom: auto;
     color: white;
+    text-decoration: none;
 }
 h1 {
     font-size: 54px;
