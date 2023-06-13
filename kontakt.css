@@ -46,6 +46,9 @@ h1 {
 .right {
     margin: 0 30px;
 }
+.right p {
+    color: white;
+}
 footer {
     border: none;
 }
