@@ -34,7 +34,8 @@
     font-weight: 100;
     width: 35%;
 }
-.infoBox h1 {
+.infoBox h1,
+.infoBox h2 {
     font-size: 54px;
 }
 .infoBox p {
@@ -73,6 +74,19 @@
 .swiper .swiper-pagination-bullet-active {
     background-color: lightgray;
 }
+/*styly pro případné další okno s obrázkem a popiskem, zatím použity pouze v fotky.html*/
+.adjustments {
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    z-index: 0;
+    background-color: white;
+    width: 100%;
+}
+.infoBox h2 {
+    margin-top: 50px;
+    color: black;
+}
 /*styly pro video !!!POUŽITÉ POUZE PRO video.html!!!*/
 .videoContainer {
     width: 65%;
@@ -87,7 +101,7 @@
     justify-content: center;
     margin-top: 0px;
 }
-h2 {
+.seeThruContainer h2 {
     z-index: 0;
     color: white;
     font-size: 51px;
@@ -127,7 +141,7 @@ p.priceWrapper {
     margin-bottom: 70px;
 }
 /*pro malé obrazovky*/
-@media (max-width: 1141px) {
+@media (max-width: 1175px) {
     .galleryContainer {
         width: 100%;
     }
@@ -136,6 +150,10 @@ p.priceWrapper {
     }
     .main {
         flex-direction: column;
+        width: 100%;
+    }
+    .adjustments {
+        flex-direction: column-reverse;
         width: 100%;
     }
     .infoBox {
@@ -147,7 +165,10 @@ p.priceWrapper {
     }
 }
 @media (max-width: 800px) {
-    h2 {
+    .seeThruContainer {
+        height: 150px;
+    }
+    .seeThruContainer h2 {
         font-size: 6vw;
     }
     .priceContainer {

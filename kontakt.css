@@ -3,15 +3,16 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    overflow: hidden;
+    min-width: 350px;
 }
 .paralaxPhoto {
     position: absolute;
+    opacity: 0.5;
+    z-index: -1;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    opacity: 0.5;
-    z-index: -1;
+    min-width: 350px;
 }
 .main {
     padding-top: 65px;
@@ -27,41 +28,39 @@ h1 {
     font-weight: 100;
     margin: 50px auto;
 }
-.contactContainer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.container {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    color: white;
+    text-decoration: none;
     font-size: 30px;
     font-weight: 100;
     letter-spacing: 1.6;
     line-height: 45px;
-    padding-top: 20vh;
+    display: grid;
+    grid-template-columns: clamp(65px, 20vw, 110px) clamp(222px, 69vw, 390px);
+    gap: 0 clamp(10px, 5vw, 30px);
+    width: clamp(336px, 96vw, 530px);
 }
-.left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+p:nth-child(2n + 1) {
+    justify-self: flex-end;
 }
-.left,
-.right {
-    margin: 0 30px;
-}
-.right p {
-    color: white;
+a {
+    color: inherit;
 }
 footer {
     border: none;
 }
 /*pro malé obrazovky*/
 @media (max-width: 600px) {
-    .contactContainer {
-        padding-top: 10vh;
-        font-size: 5vw;
-    }
     .main {
-        padding-top: 65px;
+        padding-top: 20px;
     }
     footer {
         display: none;
+    }
+    .container p {
+        font-size: clamp(17px, 5vw, 30px);
+        line-height: clamp(25px, 8vw, 42px);
     }
 }
